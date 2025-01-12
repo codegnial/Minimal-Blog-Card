@@ -1,0 +1,90 @@
+/* Reseteo básico para mantener consistencia y variables css*/
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --color-title: #20293A;
+    --color-description: #394150;
+    --background: #F2EAFD;
+    --background-card: #ffffff;
+    --color-tag: #7C19EE;
+    --color-divider: #E5EAF0;
+    
+  }
+  
+  body {
+    font-family: 'Sora', sans-serif;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  /* Estilo de la tarjeta */
+  .blog-card {
+    background-color: var(--background-card);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 338px;
+  }
+  
+  /* Imagen */
+  .blog-card-image img {
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+  }
+  
+  /* Contenido de la tarjeta */
+  .blog-card-content {
+    padding: 14px;
+  }
+  
+  /* Etiqueta */
+  .blog-tag {
+    display: inline-block;
+    /*background-color: #7c5dfa;*/
+    color: var(--color-tag);
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-bottom: 6px;
+  }
+  
+  /* Título */
+  .blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: var(--color-title);
+  }
+  
+  /* Descripción */
+  .blog-description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--color-description);
+    margin-bottom: 20px;
+  }
+
+  /* Línea divisoria */
+.divider {
+    border: none;
+    border-top: 1px solid var(--color-divider);
+    margin: 20px 0;
+  }
+  
+  
+  /* Autor */
+  .blog-author {
+    font-size: 12px;
+    /*font-weight: bold;*/
+    color: var(--color-description);
+    text-align: left;
+  }
+  

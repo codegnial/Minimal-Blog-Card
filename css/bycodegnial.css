@@ -1,0 +1,64 @@
+/* Reseteo básico para mantener consistencia y variables css*/
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --color-text: #20293A;
+    --color-social: #0d6f86;
+    --color-hover: #E5EAF0;
+    
+  }
+  
+/* ----- ----- Social Media Footer ----- ----- */
+.social-media {
+    position: absolute; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    font-family: 'Sora', sans-serif;
+    margin: 20px;
+    padding: 8px;
+    bottom: 0.6rem;
+    font-size: .8rem;
+    width: 100vh;
+    .bi-github {
+        width: 8px;
+        height: 8px;
+        background-color: var(--color-social);
+        padding: 8px;
+        border-radius: 4px;
+        color: var(--background);
+    }
+    .bi-github:hover {
+        background-color: var(--color-text);
+        transition: 0.40s ease;
+    }
+
+}
+
+.social-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: .625rem;
+}
+
+.social-columns .column {
+    padding: .4rem;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.social-media .icon {
+    color: var(--color-social);
+}
+
+.social-media .icon:hover {
+    color: var(--color-text);    
+    transition: 0.40s ease;
+}
